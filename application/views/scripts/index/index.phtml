@@ -1,0 +1,29 @@
+
+<div id="page-wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul style="margin-top: 20px">
+                    <?php
+                    foreach ($this->courses as $course) {
+                        ?>
+                        <li style="display: inline; float: left; margin: 20px;" ><a href="#">
+                            <span>
+                                <span>
+                                    <?php echo "<img width= '200' height='200' alt='img'  src='" . $this->baseUrl() . "/images/temp_img/course-1.jpg'/>"; ?>
+                                </span>
+                                <span>
+                                    <h3 class="singCourse_title"><?php echo $course['title'] ?></h3>
+                                </span>
+
+                            </span>
+                            </a>
+                        </li>
+                        <?php
+                    }
+                    ?>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
